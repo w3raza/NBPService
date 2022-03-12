@@ -1,18 +1,17 @@
 package zoo.NBPCurrency.model;
 
 import feign.Headers;
+import feign.Param;
 import feign.RequestLine;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 
 public interface FeignNbpClient {
-    @RequestLine("GET /rates/a/usd")
-    @Headers("Accept: application/json")
-    Currency getUsdCurrency();
 
-    @RequestLine("GET /rates/a/eur")
+    @RequestLine("GET /tables/a/last/5")
     @Headers("Accept: application/json")
-    Currency getEurCurrency();
+    ArrayList<Currency> getCurrency();
 
     @RequestLine("GET /last/14")
     @Headers("Accept: application/json")

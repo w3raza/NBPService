@@ -1,12 +1,16 @@
 package zoo.NBPCurrency.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 
-import java.util.List;
+import java.util.ArrayList;
+import java.util.Date;
 
 @Data
+@Getter
+@AllArgsConstructor
 public class Currency {
-    private String currency;
-    private String code;
-    private List<RatesNbp> rates;
+    private String effectiveDate;
+    private ArrayList<RatesNbp> rates;
 }

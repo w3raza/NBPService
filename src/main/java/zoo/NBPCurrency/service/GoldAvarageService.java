@@ -6,9 +6,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import zoo.NBPCurrency.model.FeignNbpClient;
 import zoo.NBPCurrency.model.Gold;
+import zoo.NBPCurrency.model.GoldView;
 
-import java.math.BigDecimal;
-import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -16,13 +15,13 @@ import java.util.List;
 public class GoldAvarageService {
     private final String NBP_URL = "http://api.nbp.pl/api/cenyzlota";
 
-    public Gold getAvarageGoldPrice() {
+    public GoldView getAvarageGoldPrice() {
         var feignClient = getFeignNbpClient();
         List<Gold> goldList = feignClient.getGoldAvarage();
         System.out.println(goldList);
 
-        return new Gold(goldList.get(0).getData(), goldList.get(goldList.size()-1).getData(),goldList.stream()
-                .mapToDouble(d -> d.getCena())
+        return new GoldView(goldList.get(0).getData(), goldList.get(goldList.size()-1).getData(),goldList.stream()
+                .mapToDouble(Gold::getCena)
                 .average()
                 .orElse(0.0));
     }

@@ -1,13 +1,15 @@
 package zoo.NBPCurrency.model;
 
 import lombok.Data;
+import lombok.Getter;
 
 import java.math.BigDecimal;
-import java.util.Date;
 
+@Getter
 @Data
 public class RatesNbp {
-    private Date effectiveDate;
+    private String currency;
+    private String code;
     private BigDecimal mid;
 }
 
