@@ -24,7 +24,7 @@ public class CurrencyController {
         return currencyService.getCurrencyFromNbp(currencyCode);
     }
 
-    @GetMapping("/gold-price/avarage")
+    @GetMapping("/gold-price/average")
     public GoldView getAvaragePrice() {
         return goldAvarageService.getAvarageGoldPrice();
     }
