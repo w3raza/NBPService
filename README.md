@@ -1,10 +1,19 @@
 # NBP Service
+It is a simple applications which contains a service using Java Spring framework like:
+- lombok
+- Web Spring
 
-## App Info
-It is a simple applications which contains a service using Java Spring framework
+Also use:
+- Feign (HTTP client binder)
 
-## Manual Guide
+##Requirements:
+- Java 11
+
+##Instalation step and run:
 Colne github and run code!
+
+
+##Local Development
 To see results just run your browser and enter one of the link:
 
 - [http://localhost:8080/api/gold-price/average](http://localhost:8080/api/gold-price/average)
