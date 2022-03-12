@@ -1,10 +1,11 @@
 # NBP Service
-It is a simple applications which contains a service using Java Spring framework like:
+Service using Java Spring framework like:
 - lombok
 - Web Spring
 
 Also use:
 - Feign (HTTP client binder)
+- NBP API: [http://api.nbp.pl/en.html](http://api.nbp.pl/en.html)
 
 ##Requirements:
 - Java 11
