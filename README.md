@@ -21,7 +21,7 @@ To see results just run your browser and enter one of the link:
   to display the average gold price for the last 14 business days.
 
 - [http://localhost:8080/api/exchange-rates/{currencyCode}](http://localhost:8080/api/exchange-rates/USD)
-  (for example USD) to display currency exchange rate PLN to {currencyCode} for the last 5 business days.
+  (e.g. USD) to display currency exchange rate PLN to {currencyCode} for the last 5 business days.
 
 ### Average gold price for the last 14 days
 ![](./img/gold.png)
