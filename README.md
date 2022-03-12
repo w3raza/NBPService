@@ -16,7 +16,7 @@ or
   (for example USD) to display currency exchange rate PLN to {currencyCode} for the last 5 business days.
 
 #### Average gold price for the last 14 days
-
+![](./img/gold.png)
 
 #### Exchange rate for USD
-
+![](./img/currencyUSD.png)
