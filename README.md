@@ -7,14 +7,14 @@ Also use:
 - Feign (HTTP client binder)
 - NBP API: [http://api.nbp.pl/en.html](http://api.nbp.pl/en.html)
 
-##Requirements:
+## Requirements:
 - Java 11
 
-##Instalation step and run:
+## Instalation step and run:
 Colne github and run code!
 
 
-##Local Development
+## Local Development
 To see results just run your browser and enter one of the link:
 
 - [http://localhost:8080/api/gold-price/average](http://localhost:8080/api/gold-price/average)
